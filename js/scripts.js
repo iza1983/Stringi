@@ -2,12 +2,7 @@ var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na 
 console.log(text);
 
 var animal = 'Zielone słonie';
-var animalUpperCased = animal.toUpperCase();
-console.log(animalUpperCased);
+var textAfter = text.replace('Papugi', animal.toUpperCase());
 
-var textCharsAfter = text.replace('Papugi', animalUpperCased);
-console.log(textCharsAfter);
-console.log(textCharsAfter.length);
-
-var partOfText = textCharsAfter.slice(0,45);
-console.log(partOfText);
+console.log(textAfter);
+console.log(textAfter.slice(0, textAfter.length / 2));
